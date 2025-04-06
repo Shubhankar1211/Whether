@@ -5,6 +5,5 @@ A beginner-friendly weather application that fetches and displays real-time weat
 ## 🔧 Features
 
 - Search current weather by city name
-- Shows temperature, weather conditions, humidity, and wind speed
-- Dynamic weather icons
+- Shows temperature, weather conditions
 - Simple and responsive UI
