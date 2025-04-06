@@ -3,9 +3,9 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  }
+}
   
-  body {
+body {
     background: linear-gradient(135deg, #67B26F, #4ca2cd);
     background-size: 400% 400%;
     animation: gradient-animation 15s ease infinite;
@@ -15,21 +15,21 @@
     align-items: center;
     padding: 20px;
     transition: all 0.5s ease;
-  }
+}
   
-  @keyframes gradient-animation {
+@keyframes gradient-animation {
     0% {
-      background-position: 0% 50%;
+        background-position: 0% 50%;
     }
     50% {
-      background-position: 100% 50%;
+        background-position: 100% 50%;
     }
     100% {
-      background-position: 0% 50%;
+        background-position: 0% 50%;
     }
-  }
+}
   
-  .container {
+.container {
     background-color: rgba(255, 255, 255, 0.85);
     border-radius: 20px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
@@ -39,14 +39,14 @@
     text-align: center;
     backdrop-filter: blur(10px);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
+}
   
-  .container:hover {
+.container:hover {
     transform: translateY(-5px);
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
-  }
+}
   
-  h1 {
+h1 {
     color: #333;
     margin-bottom: 30px;
     font-size: 2.5rem;
@@ -54,9 +54,9 @@
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
     position: relative;
     display: inline-block;
-  }
+}
   
-  h1::after {
+h1::after {
     content: '';
     position: absolute;
     width: 0;
@@ -65,20 +65,20 @@
     left: 50%;
     background-color: #4ca2cd;
     transition: all 0.3s ease;
-  }
+}
   
-  .container:hover h1::after {
+.container:hover h1::after {
     width: 80%;
     left: 10%;
-  }
+}
   
-  .input-container {
+.input-container {
     display: flex;
     margin-bottom: 30px;
     gap: 10px;
-  }
+}
   
-  #city-input {
+#city-input {
     flex: 1;
     padding: 15px;
     border: 2px solid transparent;
@@ -87,18 +87,18 @@
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     outline: none;
     transition: all 0.3s ease;
-  }
+}
   
-  #city-input:hover {
+#city-input:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
-  }
+}
   
-  #city-input:focus {
+#city-input:focus {
     border-color: #4ca2cd;
     box-shadow: 0 4px 10px rgba(76, 162, 205, 0.3);
-  }
+}
   
-  #get-whether-btn {
+#get-weather-btn {
     padding: 15px 25px;
     background-color: #4ca2cd;
     color: white;
@@ -111,9 +111,9 @@
     overflow: hidden;
     transition: all 0.3s ease;
     z-index: 1;
-  }
+}
   
-  #get-whether-btn::before {
+#get-weather-btn::before {
     content: '';
     position: absolute;
     top: 0;
@@ -123,24 +123,24 @@
     background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
     transition: all 0.5s ease;
     z-index: -1;
-  }
+}
   
-  #get-whether-btn:hover {
+#get-weather-btn:hover {
     background-color: #3a91bc;
     transform: translateY(-3px);
     box-shadow: 0 6px 15px rgba(76, 162, 205, 0.5);
-  }
+}
   
-  #get-whether-btn:hover::before {
+#get-weather-btn:hover::before {
     left: 100%;
-  }
+}
   
-  #get-whether-btn:active {
+#get-weather-btn:active {
     transform: translateY(0);
     box-shadow: 0 2px 8px rgba(76, 162, 205, 0.4);
-  }
+}
   
-  #Whether-info {
+#weather-info {
     background-color: rgba(255, 255, 255, 0.8);
     border-radius: 15px;
     padding: 30px;
@@ -148,49 +148,49 @@
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     transition: all 0.4s ease;
     transform: scale(0.98);
-  }
+}
   
-  #Whether-info:hover {
+#weather-info:hover {
     transform: scale(1);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-  }
+}
   
-  #city-name {
+#city-name {
     font-size: 2rem;
     color: #333;
     margin-bottom: 15px;
     transition: color 0.3s ease;
-  }
+}
   
-  #Whether-info:hover #city-name {
+#weather-info:hover #city-name {
     color: #3a91bc;
-  }
+}
   
-  #temperature {
+#temperature {
     font-size: 3rem;
     font-weight: bold;
     color: #4ca2cd;
     margin-bottom: 10px;
     transition: transform 0.3s ease;
-  }
+}
   
-  #Whether-info:hover #temperature {
+#weather-info:hover #temperature {
     transform: scale(1.05);
-  }
+}
   
-  #description {
+#description {
     font-size: 1.2rem;
     color: #555;
     text-transform: capitalize;
     transition: all 0.3s ease;
-  }
+}
   
-  #Whether-info:hover #description {
+#weather-info:hover #description {
     color: #333;
     letter-spacing: 0.5px;
-  }
+}
   
-  #error-message {
+#error-message {
     color: #e74c3c;
     margin-top: 15px;
     font-size: 1rem;
@@ -198,43 +198,43 @@
     opacity: 0;
     transform: translateY(-10px);
     animation: fade-in 0.3s forwards;
-  }
+}
   
-  @keyframes fade-in {
+@keyframes fade-in {
     to {
-      opacity: 1;
-      transform: translateY(0);
+        opacity: 1;
+        transform: translateY(0);
     }
-  }
+}
   
-  .hidden {
+.hidden {
     display: none;
-  }
+}
   
-  /* Responsive styles */
-  @media (max-width: 600px) {
+/* Responsive styles */
+@media (max-width: 600px) {
     .container {
-      padding: 25px;
+        padding: 25px;
     }
     
     h1 {
-      font-size: 2rem;
-      margin-bottom: 20px;
+        font-size: 2rem;
+        margin-bottom: 20px;
     }
     
     .input-container {
-      flex-direction: column;
+        flex-direction: column;
     }
     
-    #city-input, #get-whether-btn {
-      width: 100%;
+    #city-input, #get-weather-btn {
+        width: 100%;
     }
     
     #city-input {
-      margin-bottom: 10px;
+        margin-bottom: 10px;
     }
     
     #temperature {
-      font-size: 2.5rem;
+        font-size: 2.5rem;
     }
-  }
+}
