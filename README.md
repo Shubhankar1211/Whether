@@ -1,2 +1,10 @@
-# Whether
-A simple weather application built using HTML, CSS, and JavaScript that fetches real-time weather data using an API and displays it to the user in a clean interface.
+# 🌤️ Basic Weather App
+
+A beginner-friendly weather application that fetches and displays real-time weather information for any city using the **OpenWeatherMap API**, built with **HTML**, **CSS**, and **JavaScript**.
+
+## 🔧 Features
+
+- Search current weather by city name
+- Shows temperature, weather conditions, humidity, and wind speed
+- Dynamic weather icons
+- Simple and responsive UI
